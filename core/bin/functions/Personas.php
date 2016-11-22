@@ -1,5 +1,4 @@
 <?php
-
   function Personas() {
     $db = new Conexion();
     $sql = $db->query("SELECT * FROM persona;");

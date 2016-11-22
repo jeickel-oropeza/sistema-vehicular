@@ -19,7 +19,9 @@
   require('core/models/class.Conexion.php');
   require('core/bin/functions/Vehiculos.php');
   require('core/bin/functions/Personas.php');
+  require('core/bin/functions/Asignaciones.php');
 
   $_personas = Personas();
   $_vehiculos = Vehiculos();
+  $_asignaciones = Asignaciones();
  ?>
