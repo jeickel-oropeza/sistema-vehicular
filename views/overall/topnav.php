@@ -32,6 +32,7 @@
            <li><a href="?view=asignacion">Consultar asignaciones</a></li>
          </ul>
        </li>
+       <li><a href="?view=vehiculos&mode=mantenimiento">Mantenimiento</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

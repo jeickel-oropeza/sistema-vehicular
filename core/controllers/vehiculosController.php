@@ -10,6 +10,20 @@
         include('views/template/regvehiculo.php');
       }
       break;
+      case 'mantenimiento':
+        if ($_POST) {
+          $vehiculo->Mantenimiento();
+        }else{
+          include('views/template/mantenimiento.php');
+        }
+      break;
+      case 'kilometraje':
+      if ($_POST) {
+        $vehiculos->Kilometraje();
+      }else {
+        include('views/template/kilometraje.php');
+      }
+      break;
 
     default:
       include('views/template/allvehiculos.php');

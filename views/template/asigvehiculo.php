@@ -2,11 +2,9 @@
 <body>
   <?php include('views/overall/topnav.php'); ?>
 
-  <!-- <div class="row categorias_con_foros"> -->
     <div class="col-sm-6">
         <h2>Datos del Vehiculo</h2>
 
-        <div class="row cajas">
           <div class="col-sm-12">
             <?php
 
@@ -18,7 +16,7 @@
              </tr></thead>
              <tbody>';
               foreach($_vehiculos as $id_vehiculo => $vehiculo_array) {
-                if ($_vehiculos[$id_vehiculo]['estatus'] != 1) {
+                if ($_vehiculos[$id_vehiculo]['estatus'] != 0) {
                   $HTML .= '<tr id='.$_vehiculos[$id_vehiculo]['id'].'>
                     <td>'.$_vehiculos[$id_vehiculo]['placa'].'</td>
                     <td>'.$_vehiculos[$id_vehiculo]['marca'].'</td>
@@ -35,14 +33,11 @@
             ?>
           </div>
         </div>
-    </div>
-  <!-- </div> -->
 
-  <!-- <div class="row categorias_con_foros"> -->
+
     <div class="col-sm-6">
         <h2>Datos de la Persona</h2>
 
-        <div class="row cajas">
           <div class="col-sm-12">
             <?php
 
@@ -68,10 +63,9 @@
             echo $HTML;
             ?>
           </div>
-        </div>
     </div>
     <center><button name="asignar" value="Ingresar" id = "btn_asignar" onclick = "" class ="btn btn-default disabled">Asignar</button></center>
-  <!-- </div> -->
+
 
   <?php include('views/overall/footer.php') ?>
 </body>

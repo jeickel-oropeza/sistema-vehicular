@@ -2,14 +2,10 @@
 <body>
   <?php include('views/overall/topnav.php'); ?>
 
-  <div class="row categorias_con_foros">
     <div class="col-sm-12">
-        <center><h1>Asignaciones Realizadas</h1></center>
-
-        <div class="row cajas">
-          <div class="col-md-12">
-            <?php
-
+      <center><h1>Asignaciones Realizadas</h1></center>
+        <div class="col-md-12">
+          <?php
             if(false != $_asignaciones) {
              $HTML = '<table class="table table-hover"><thead><tr>
              <th>Placa</th>
@@ -39,10 +35,8 @@
 
             echo $HTML;
             ?>
-          </div>
         </div>
     </div>
-  </div>
 
   <?php include('views/overall/footer.php') ?>
 </body>

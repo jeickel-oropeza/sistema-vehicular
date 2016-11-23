@@ -29,7 +29,7 @@
         $this->Errors('?view=asignacion&mode=add&error=');
 
         $sql = "INSERT INTO asignacion (id_vehiculo,id_persona) VALUES ('$this->idVehiculo','$this->idPersona');";
-        $sql .= "UPDATE vehiculo SET estatus=0 WHERE id='$this->idVehiculo';";
+        $sql .= "UPDATE vehiculo SET estatus=1 WHERE id='$this->idVehiculo';";
         $this->db->multi_query($sql);
  
         header('location: ?view=asignacion&mode=add&success=true');  
