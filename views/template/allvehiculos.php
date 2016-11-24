@@ -23,7 +23,7 @@
              <tbody>';
               foreach($_vehiculos as $id_vehiculo => $vehiculo_array) {
                 if ($_vehiculos[$id_vehiculo]['estatus'] == 0) {
-                  $disponible++;
+                  $asignado++;
                   $HTML .= '<tr>
                     <td>'.$_vehiculos[$id_vehiculo]['placa'].'</td>
                     <td>'.$_vehiculos[$id_vehiculo]['marca'].'</td>
@@ -33,7 +33,7 @@
                     <td>Asignado</td>
                   </tr>';
                 }else if ($_vehiculos[$id_vehiculo]['estatus'] == 1) {
-                  $asignado++;
+                  $disponible++;
                   $HTML .= '<tr>
                     <td>'.$_vehiculos[$id_vehiculo]['placa'].'</td>
                     <td>'.$_vehiculos[$id_vehiculo]['marca'].'</td>
@@ -43,6 +43,7 @@
                     <td>Disponible</td>
                   </tr>';
                 }else if ($_vehiculos[$id_vehiculo]['estatus'] == 2) {
+                  $mantenimiento++;
                   $HTML .= '<tr>
                     <td>'.$_vehiculos[$id_vehiculo]['placa'].'</td>
                     <td>'.$_vehiculos[$id_vehiculo]['marca'].'</td>

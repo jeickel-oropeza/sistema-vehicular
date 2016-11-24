@@ -12,7 +12,7 @@
       break;
       case 'mantenimiento':
         if ($_POST) {
-          $vehiculo->Mantenimiento();
+          $vehiculos->Mantenimiento();
         }else{
           include('views/template/mantenimiento.php');
         }

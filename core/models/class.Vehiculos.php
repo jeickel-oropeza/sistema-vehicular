@@ -41,7 +41,7 @@
     }
 
     public function Mantenimiento(){
-      $this->Errors('?view=vehiculos&mode=mantenimiento&error=');
+      $this->id = $this->db->real_escape_string($_POST['id']);
       $this->db->query("UPDATE vehiculo SET estatus=2,kilometraje=0 WHERE id='$this->id';");
     }
 
@@ -49,7 +49,6 @@
       $this->id = $this->db->real_escape_string($_POST['id']);
       $this->kilometraje = $this->db->real_escape_string($_POST['kilometraje']);
       $this->db->query("UPDATE vehiculo SET kilometraje='$this->kilometraje' WHERE id='$this->id';");
-      header('location: ?view=vehiculos&mode=mantenimiento');
     }
 
     public function __destruct(){

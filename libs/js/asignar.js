@@ -59,6 +59,7 @@ $(document).ready(function() {
             success: function(data){
               alert('Asignacion realizada');
               console.log('enviado');
+              $(location).attr('href',url);
             },
             error: function(data){
               alert('Error...');

@@ -23,7 +23,14 @@
            <li><a href="?view=vehiculos">Consultar vehiculos</a></li>
          </ul>
        </li>
-        <li><a href="?view=personas&mode=add">Persona</a></li>
+        <li class="dropdown">
+         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Personas <span class="caret"></span></a>
+         <ul class="dropdown-menu">
+           <li><a href="?view=personas&mode=add">Registrar persona</a></li>
+           <li role="separator" class="divider"></li>
+           <li><a href="?view=personas">Consultar personas</a></li>
+         </ul>
+       </li>
         <li class="dropdown">
          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Asignacion <span class="caret"></span></a>
          <ul class="dropdown-menu">

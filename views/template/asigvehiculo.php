@@ -16,7 +16,7 @@
              </tr></thead>
              <tbody>';
               foreach($_vehiculos as $id_vehiculo => $vehiculo_array) {
-                if ($_vehiculos[$id_vehiculo]['estatus'] != 0) {
+                if ($_vehiculos[$id_vehiculo]['estatus'] == 1) {
                   $HTML .= '<tr id='.$_vehiculos[$id_vehiculo]['id'].'>
                     <td>'.$_vehiculos[$id_vehiculo]['placa'].'</td>
                     <td>'.$_vehiculos[$id_vehiculo]['marca'].'</td>

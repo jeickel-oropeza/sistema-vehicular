@@ -42,7 +42,7 @@
                   <?php
                   echo '<td><a href="?view=vehiculos&mode=kilometraje&id='.$_vehiculos[$id_vehiculo]['id'].'"><span class="glyphicon glyphicon-cog" style="margin-left: 26%;"><span></a></td>
 
-                  <td id='.$_vehiculos[$id_vehiculo]['id'].'><a href="" id="enviar">
+                  <td id='.$_vehiculos[$id_vehiculo]['id'].'><a href="#" id="enviar">
                           <span class="glyphicon glyphicon-paste" style="margin-left: 26%;"><span>
                       </a>
                   </td>' ?>
