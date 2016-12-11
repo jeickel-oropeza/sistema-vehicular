@@ -57,7 +57,7 @@
               }
               $HTML .= '</tbody></table>';
             } else {
-              $HTML = '<div class="alert alert-dismissible alert-info"><strong>INFORMACIÓN: </strong> Todavía no existe ningun vehiculo registrado.</div>';
+              $HTML = '<div class="alert alert-dismissible alert-info"><strong>INFORMACIÓN: </strong> Todavía no existe ninguna persona registrada.</div>';
             }
 
             echo $HTML;
